@@ -4,7 +4,7 @@ class AdditionGUI extends Frame implements ActionListener
 {
 Button b;
 Label L1, L2,L3;
-Textfield t1,t2,t3;
+TextField t1,t2,t3;
 AdditionGUI()
 {
 setSize(400,350);
