@@ -7,7 +7,7 @@ Label L1, L2,L3;
 TextField t1,t2,t3;
 SubtractionGUI()
 {
-setSize(400,350);
+setSize(400,300);
 SetLayout(new FlowLayout());
 L1=new Label("enter first no:");
 L2=new Label("enter second no:");
