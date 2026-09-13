@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Java Programming Hub (1.1 - 1.54)</title>
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+      --text: #2c3e50;
+      --accent: #e74c3c;
+      --code-bg: #1e1e1e;
+      --code-color: #dcdcdc;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .topic-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--primary);
+    }
+
+    .topic-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .sentence-box {
+      font-style: italic;
+      background-color: #eef5fc;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      border-left: 3px solid #3498db;
+    }
+
+    pre {
+      background-color: var(--code-bg);
+      color: var(--code-color);
+      padding: 14px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+
+    code {
+      font-family: 'Consolas', 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Java Programming Hub</h1>
+    <p>Detailed Topic-by-Topic Guide (1.1 - 1.54)</p>
+  </div>
+
+  <!-- 1.1 -->
+  <div class="topic-card">
+    <div class="topic-title">1.1 Introduction To Java</div>
+    <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+    <div class="sentence-box">Sentence: Java is widely used for building secure backend systems.</div>
+    <pre><code>public class Intro {
+    public static void main(String[] args) {
+        System.out.println("Welcome to Java Programming!");
+    }
+}</code></pre>
+  </div>
+
+  <!-- 1.2 -->
+  <div class="topic-card">
+    <div class="topic-title">1.2 Java History</div>
+    <p>Created by James Gosling at Sun Microsystems in 1995, initially named Oak after an oak tree outside Gosling's office.</p>
+    <div class="sentence-box">Sentence: Java was initially developed for interactive television systems.</div>
+    <pre><code>// History Note: Released by Sun Microsystems in 1995</code></pre>
+  </div>
+
+  <!-- 1.3 -->
+  <div class="topic-card">
+    <div class="topic-title">1.3 Why Java</div>
+    <p>Java supports the WORA (Write Once, Run Anywhere) principle, enabling cross-platform execution through compiled bytecode.</p>
+    <div class="sentence-box">Sentence: Developers choose Java for its portability and stability across operating systems.</div>
+    <pre><code>System.out.println("WORA: Write Once, Run Anywhere");</code></pre>
+  </div>
+
+  <!-- 1.4 -->
+  <div class="topic-card">
+    <div class="topic-title">1.4 Features of Java</div>
+    <p>Key features include Object-Oriented, Platform-Independent, Robust, Secure, Multithreaded, and Dynamic execution.</p>
+    <div class="sentence-box">Sentence: Automatic garbage collection makes Java a robust language.</div>
+    <pre><code>boolean isPlatformIndependent = true;</code></pre>
+  </div>
+
+  <!-- 1.5 -->
+  <div class="topic-card">
+    <div class="topic-title">1.5 Environment Setup</div>
+    <p>Requires installing Java Development Kit (JDK) and configuring environment variables such as PATH and JAVA_HOME.</p>
+    <div class="sentence-box">Sentence: Setting environment variables enables running Java tools from the command line.</div>
+    <pre><code>// Command to check version: java -version</code></pre>
+  </div>
+
+  <!-- 1.6 -->
+  <div class="topic-card">
+    <div class="topic-title">1.6 Hello World Application</div>
+    <p>The standard initial program to understand program execution entry points in Java.</p>
+    <div class="sentence-box">Sentence: Every standalone Java program requires a main method entry point.</div>
+    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}</code></pre>
+  </div>
+
+  <!-- 1.7 -->
+  <div class="topic-card">
+    <div class="topic-title">1.7 Java Program Internal</div>
+    <p>Java source code (.java) is compiled into Bytecode (.class) by `javac`, which is then interpreted/compiled into machine code by JVM.</p>
+    <div class="sentence-box">Sentence: The Java compiler converts human-readable code into intermediate bytecode.</div>
+    <pre><code>// Compilation: javac Program.java -> Program.class
+// Execution: java Program</code></pre>
+  </div>
+
+  <!-- 1.8 -->
+  <div class="topic-card">
+    <div class="topic-title">1.8 JDK, JRE, JVM</div>
+    <p>JDK is the development kit containing debugging/compiling tools, JRE provides runtime environment libraries, and JVM executes bytecode.</p>
+    <div class="sentence-box">Sentence: JDK includes JRE, which in turn contains the JVM engine.</div>
+    <pre><code>// JDK = JRE + Development Tools
+// JRE = JVM + Library Classes</code></pre>
+  </div>
+
+  <!-- 1.9 -->
+  <div class="topic-card">
+    <div class="topic-title">1.9 JVM - Java Virtual Machine</div>
+    <p>An abstract engine that loads bytecode, verifies code execution, allocates memory, and handles garbage collection.</p>
+    <div class="sentence-box">Sentence: The JVM translates bytecode into system-specific native instructions.</div>
+    <pre><code>// JVM Components: ClassLoader, Memory Area, Execution Engine</code></pre>
+  </div>
+
+  <!-- 1.10 -->
+  <div class="topic-card">
+    <div class="topic-title">1.10 Class, Objects, Data Types</div>
+    <p>A class defines a blueprint, objects represent instances, and data types (primitive and non-primitive) specify value categories.</p>
+    <div class="sentence-box">Sentence: Objects store state in fields and expose behavior through methods.</div>
+    <pre><code>class Student {
+    int id = 101;
+    String name = "Haleema";
+}</code></pre>
+  </div>
+
+  <!-- 1.11 -->
+  <div class="topic-card">
+    <div class="topic-title">1.11 Variables</div>
+    <p>Variables are named memory locations used to hold data values during program execution (Local, Instance, Static).</p>
+    <div class="sentence-box">Sentence: Instance variables belong to a class instance.</div>
+    <pre><code>int age = 21; // Local variable
+double gpa = 8.7;</code></pre>
+  </div>
+
+  <!-- 1.12 -->
+  <div class="topic-card">
+    <div class="topic-title">1.12 Type Casting</div>
+    <p>Converting a variable from one data type to another, either implicitly (Widening) or explicitly (Narrowing).</p>
+    <div class="sentence-box">Sentence: Narrowing type casting requires explicit type syntax.</div>
+    <pre><code>double val = 9.8;
+int num = (int) val; // Explicit conversion to 9</code></pre>
+  </div>
+
+  <!-- 1.13 -->
+  <div class="topic-card">
+    <div class="topic-title">1.13 Operators</div>
+    <p>Symbols that perform operations on variables and values (Arithmetic, Relational, Logical, Bitwise, Assignment).</p>
+    <div class="sentence-box">Sentence: Logical operators combine multiple boolean expressions.</div>
+    <pre><code>int a = 10, b = 20;
+boolean isGreater = (b > a) && (a > 0);</code></pre>
+  </div>
+
+  <!-- 1.14 -->
+  <div class="topic-card">
+    <div class="topic-title">1.14 Java Comments</div>
+    <p>Non-executable statements used for code documentation (`//`, `/* */`, `/** */`).</p>
+    <div class="sentence-box">Sentence: Multi-line comments explain complex algorithms in source code.</div>
+    <pre><code>// Single line comment
+/* Multi-line
+   comment section */</code></pre>
+  </div>
+
+  <!-- 1.15 -->
+  <div class="topic-card">
+    <div class="topic-title">1.15 Object Oriented Programming Concepts</div>
+    <p>The four core pillars: Abstraction (hiding details), Encapsulation (data hiding), Polymorphism (many forms), and Inheritance (code reuse).</p>
+    <div class="sentence-box">Sentence: Encapsulation restricts direct access to an object's internal fields.</div>
+    <pre><code>// 1. Abstraction 2. Encapsulation 3. Polymorphism 4. Inheritance</code></pre>
+  </div>
+
+  <!-- 1.16 -->
+  <div class="topic-card">
+    <div class="topic-title">1.16 Java Coding Standards</div>
+    <p>Naming conventions: CamelCase for methods/variables, PascalCase for classes, ALL_CAPS for constants.</p>
+    <div class="sentence-box">Sentence: Adhering to coding standards improves code readability and maintainability.</div>
+    <pre><code>public class StudentRecord { // PascalCase
+    private String studentName; // camelCase
+    public static final double MAX_SCORE = 100.0; // CONSTANT
+}</code></pre>
+  </div>
+
+  <!-- 1.17 -->
+  <div class="topic-card">
+    <div class="topic-title">1.17 Package - Creating package, naming package</div>
+    <p>Packages group related classes and interfaces together, preventing naming conflicts.</p>
+    <div class="sentence-box">Sentence: Packages manage namespace hierarchy in large applications.</div>
+    <pre><code>package com.myapp.utils;
+
+public class Helper {
+    // Utilities
+}</code></pre>
+  </div>
+
+  <!-- 1.18 -->
+  <div class="topic-card">
+    <div class="topic-title">1.18 Java Keywords</div>
+    <p>Reserved words in Java syntax that have special meanings (e.g., `class`, `public`, `static`, `void`).</p>
+    <div class="sentence-box">Sentence: Reserved keywords cannot be used as identifier names.</div>
+    <pre><code>// Examples: final, abstract, synchronized, return</code></pre>
+  </div>
+
+  <!-- 1.19 -->
+  <div class="topic-card">
+    <div class="topic-title">1.19 Access Specifiers</div>
+    <p>Modifiers controlling accessibility scope: `public` (everywhere), `private` (class only), `protected` (package & subclass), `default` (package only).</p>
+    <div class="sentence-box">Sentence: Private members provide encapsulation by hiding internal state.</div>
+    <pre><code>public int openData;
+private int hiddenData;</code></pre>
+  </div>
+
+  <!-- 1.20 -->
+  <div class="topic-card">
+    <div class="topic-title">1.20 Static Concept</div>
+    <p>`static` members belong to the class rather than instances, shared among all object instances.</p>
+    <div class="sentence-box">Sentence: Static methods can be invoked without instantiating the class.</div>
+    <pre><code>class Counter {
+    static int count = 0;
+    static void increment() { count++; }
+}</code></pre>
+  </div>
+
+  <!-- 1.21 -->
+  <div class="topic-card">
+    <div class="topic-title">1.21 Scanner Class</div>
+    <p>Part of `java.util` used to read user input from various sources, including keyboard input.</p>
+    <div class="sentence-box">Sentence: Scanner reads primitive data types and strings from standard input.</div>
+    <pre><code>import java.util.Scanner;
+Scanner sc = new Scanner(System.in);
+int inputVal = sc.nextInt();</code></pre>
+  </div>
+
+  <!-- 1.22 -->
+  <div class="topic-card">
+    <div class="topic-title">1.22 Control Statements</div>
+    <p>Direct program execution flow using decisions (`if`, `if-else`, `nested if`, `switch-case`).</p>
+    <div class="sentence-box">Sentence: Switch statements efficiently handle multi-branch conditions.</div>
+    <pre><code>int mark = 85;
+if (mark >= 80) {
+    System.out.println("Grade A");
+} else {
+    System.out.println("Grade B");
+}</code></pre>
+  </div>
+
+  <!-- 1.23 -->
+  <div class="topic-card">
+    <div class="topic-title">1.23 Java Break Statement</div>
+    <p>Terminates the loop or switch block execution immediately upon detection.</p>
+    <div class="sentence-box">Sentence: The break statement exits a loop prior to normal condition completion.</div>
+    <pre><code>for(int i = 0; i < 10; i++) {
+    if(i == 5) break;
+    System.out.println(i);
+}</code></pre>
+  </div>
+
+  <!-- 1.24 -->
+  <div class="topic-card">
+    <div class="topic-title">1.24 Java Continue Statement</div>
+    <p>Skips the rest of the current loop iteration and moves execution to the next iteration.</p>
+    <div class="sentence-box">Sentence: Continue skips remaining statements inside a loop body for the current step.</div>
+    <pre><code>for(int i = 0; i < 5; i++) {
+    if(i == 2) continue;
+    System.out.println(i);
+}</code></pre>
+  </div>
+
+  <!-- 1.25 -->
+  <div class="topic-card">
+    <div class="topic-title">1.25 Flow Statement - for, while, do..while</div>
+    <p>Loops iterate over blocks of code while specific conditions remain true.</p>
+    <div class="sentence-box">Sentence: A do-while loop executes code at least once regardless of condition.</div>
+    <pre><code>int x = 1;
+while(x <= 3) {
+    System.out.println("Loop: " + x);
+    x++;
