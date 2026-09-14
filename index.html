@@ -1,0 +1,174 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Hub - English & Java</title>
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --text: #2c3e50;
+      --accent: #ff6b6b;
+      --code-bg: #1e1e1e;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 15px;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 5px;
+      margin-top: 25px;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .topic-head {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .example-sentence {
+      font-style: italic;
+      color: #555;
+      background-color: #f0f4f8;
+      padding: 8px 12px;
+      border-left: 4px solid var(--primary);
+      margin: 8px 0;
+      border-radius: 4px;
+    }
+
+    pre {
+      background-color: var(--code-bg);
+      color: #dcdcdc;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+
+    code {
+      font-family: 'Consolas', 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Comprehensive Learning Hub</h1>
+    <p>Mastering English Grammar & Complete Java Programming</p>
+  </div>
+
+  <!-- JAVA PROGRAMMING SECTION -->
+  <h2 class="section-title">☕ Java Programming (Complete Syllabus 1.1 - 1.54)</h2>
+
+  <div class="card">
+    <div class="topic-head">1.1 - 1.9 Java Fundamentals & Internal Execution</div>
+    <p>Java is an object-oriented, secure, and platform-independent language using JDK, JRE, and JVM (WORA concept).</p>
+    <div class="example-sentence">Sentence: Java bytecode is executed line by line by the Java Virtual Machine.</div>
+    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.10 - 1.14 Data Types, Variables, Casting & Operators</div>
+    <p>Covers variables, type casting (implicit/explicit), and relational/logical operators.</p>
+    <div class="example-sentence">Sentence: Explicit type casting converts higher data types into lower ones.</div>
+    <pre><code>double score = 8.7;
+int roundedScore = (int) score; // Explicit Casting</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.15 Object-Oriented Programming (OOP) Pillars</div>
+    <ul>
+      <li><b>Abstraction:</b> Hiding implementation details.</li>
+      <li><b>Encapsulation:</b> Wrapping data and methods into a single unit.</li>
+      <li><b>Polymorphism:</b> Ability to take many forms (Overloading/Overriding).</li>
+      <li><b>Inheritance:</b> Deriving properties from a parent class.</li>
+    </ul>
+    <div class="example-sentence">Sentence: Encapsulation protects class data members using private access modifiers.</div>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.21 - 1.25 Control Flow & Scanner Input</div>
+    <p>Using conditions (if-else, switch) and loops (for, while, do-while) along with user inputs.</p>
+    <div class="example-sentence">Sentence: Scanner class reads user inputs from standard input stream.</div>
+    <pre><code>import java.util.Scanner;
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt();</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.40 - 1.41 Exception Handling</div>
+    <p>Handling runtime errors using try, catch, throw, throws, and finally keywords.</p>
+    <div class="example-sentence">Sentence: The finally block always executes regardless of exception handling.</div>
+    <pre><code>try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Divided by zero error!");
+} finally {
+    System.out.println("Execution finished.");
+}</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.46 - 1.48 Collection Framework</div>
+    <p>Efficient data structures: List (ArrayList, LinkedList), Set (HashSet, TreeSet), and Map (HashMap, TreeMap).</p>
+    <div class="example-sentence">Sentence: HashMap stores data in key-value pairs with unique keys.</div>
+    <pre><code>import java.util.*;
+List&lt;String&gt; topics = new ArrayList&lt;&gt;();
+topics.add("Collections");
+topics.add("Multithreading");</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.51 File Handling</div>
+    <p>Creating, writing, reading, and deleting files using Java I/O streams.</p>
+    <div class="example-sentence">Sentence: File handling operations require checking for potential I/O exceptions.</div>
+    <pre><code>import java.io.File;
+File myFile = new File("JavaNotes.txt");
+boolean created = myFile.createNewFile();</code></pre>
+  </div>
+
+  <div class="card">
+    <div class="topic-head">1.52 - 1.54 Multithreading & Thread Synchronization</div>
+    <p>Running concurrent threads safely using synchronization and object locks.</p>
+    <div class="example-sentence">Sentence: Synchronization prevents data inconsistency when multiple threads access shared resources.</div>
+    <pre><code>class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running concurrently!");
+    }
+}</code></pre>
+  </div>
+
+</body>
+</html>
